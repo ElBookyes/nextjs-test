@@ -11,9 +11,13 @@ import {
 } from "./elements";
 
 import { Card } from "../../collections/Card/Card";
+import React from "react";
+
+import { AgencyCard } from "../../types/AgencyCard";
+import { AgencySelectionProps } from "../../types/AgencySelectionProps";
 
 
-export const AgencySelection = ({ image, agencyCards }) => {
+export const AgencySelection = ({ image, agencyCards }: AgencySelectionProps) => {
   return (
     <StyledSection>
         <StyledTitle>Managed agency Selection</StyledTitle>
@@ -32,7 +36,7 @@ export const AgencySelection = ({ image, agencyCards }) => {
                   </StyledImage>
                 </StyledImageContainer>
               <StyledCardsContainer>
-                {agencyCards.map((card) => (
+                {agencyCards.map((card: AgencyCard) => (
                   <Card key={card.id}
                         title={card.title}
                         icon={card.icon}

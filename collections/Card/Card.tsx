@@ -3,7 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { CardContainer, CardTitle, CardParagraph } from "./elements";
 
-export const Card = ({ title, icon, href, description }) => {
+import { CardProps } from "../../types/CardProps";
+
+
+export const Card = ({ title, icon, href, description }: CardProps) => {
   return (
     <CardContainer href={href} target="_blank">
         <Image src={icon} alt={title} width={50} height={50} />
