@@ -51,7 +51,6 @@ export default function Home() {
         />
       </Head>
       <div>
-        <Hero {...heroProps} />
         <AgencySelection {...agencyProps} />
         {/** Other sections */}
       </div>
