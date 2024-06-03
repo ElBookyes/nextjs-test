@@ -13,8 +13,7 @@ import {
 import { Card } from "../../collections/Card/Card";
 import React from "react";
 
-import { AgencyCard } from "../../types/AgencyCard";
-import { AgencySelectionProps } from "../../types/AgencySelectionProps";
+import { AgencySelectionProps, AgencyCard } from "../../types/AgencySelectionProps";
 
 
 export const AgencySelection = ({ image, agencyCards }: AgencySelectionProps) => {
