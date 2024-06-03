@@ -14,7 +14,7 @@ export const CardTitle = styled((props) => <StyledSectionSubheading {...props} /
 export const CardContainer = styled.a`
     display: grid;
     grid-template-columns: 20% 80%;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
     border: 0.125rem solid transparent;
     color: inherit;
