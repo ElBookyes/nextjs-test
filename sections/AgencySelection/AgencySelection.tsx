@@ -13,37 +13,45 @@ import {
 import { Card } from "../../collections/Card/Card";
 import React from "react";
 
-import { AgencySelectionProps, AgencyCard } from "../../types/AgencySelectionProps";
+import {
+  AgencySelectionProps,
+  AgencyCard,
+} from "../../types/AgencySelectionProps";
 
-
-export const AgencySelection = ({ image, agencyCards }: AgencySelectionProps) => {
+export const AgencySelection = ({
+  image,
+  agencyCards,
+}: AgencySelectionProps) => {
   return (
     <StyledSection>
-        <StyledTitle>Managed agency Selection</StyledTitle>
-        <StyledSubTitle>
-          Choose from our selection of top-tier agencies
-        </StyledSubTitle>
-            <StyledContentContainer>
-                <StyledImageContainer>
-                  <StyledImage>
-                    <Image layout="responsive"
-                           src={image.src}
-                           alt={image.alt}
-                           width={image.width}
-                           height={image.height}
-                    />
-                  </StyledImage>
-                </StyledImageContainer>
-              <StyledCardsContainer>
-                {agencyCards.map((card: AgencyCard) => (
-                  <Card key={card.id}
-                        title={card.title}
-                        icon={card.icon}
-                        href={card.href}
-                        description={card.description}/>
-                ))}
-              </StyledCardsContainer>
-            </StyledContentContainer>
+      <StyledTitle>Managed agency Selection</StyledTitle>
+      <StyledSubTitle>
+        Choose from our selection of top-tier agencies
+      </StyledSubTitle>
+      <StyledContentContainer>
+        <StyledImageContainer>
+          <StyledImage>
+            <Image
+              layout="responsive"
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+            />
+          </StyledImage>
+        </StyledImageContainer>
+        <StyledCardsContainer>
+          {agencyCards.map((card: AgencyCard) => (
+            <Card
+              key={card.id}
+              title={card.title}
+              icon={card.icon}
+              href={card.href}
+              description={card.description}
+            />
+          ))}
+        </StyledCardsContainer>
+      </StyledContentContainer>
     </StyledSection>
   );
 };

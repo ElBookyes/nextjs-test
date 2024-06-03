@@ -16,7 +16,6 @@ export const CardContainer = styled.a`
     grid-template-columns: 20% 80%;
     gap: 1rem;
     align-items: center;
-    justify-items: center;
     border: 0.125rem solid transparent;
     color: inherit;
     background-color: ${({ theme }) => theme.grayF0};
@@ -38,11 +37,12 @@ export const CardContainer = styled.a`
     }
 
     @media screen and (min-width: 1024px) {
-        padding-block: 2em;
+        padding-block: 1.5em;
         padding-inline: 3em;
     }
 `;
 
 export const CardParagraph = styled((props) => <StyledSectionParagraph {...props} />)`
     margin: 0;
+    padding: 0;
 `;
