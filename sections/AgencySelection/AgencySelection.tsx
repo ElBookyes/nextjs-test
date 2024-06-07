@@ -26,7 +26,7 @@ export const AgencySelection = ({
     <StyledSection>
       <StyledTitle>Managed agency Selection</StyledTitle>
       <StyledSubTitle>
-        Choose from our selection of top-tier agencies
+        Strenghten your onboarding process
       </StyledSubTitle>
       <StyledContentContainer>
         <StyledImageContainer>

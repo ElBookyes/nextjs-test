@@ -32,7 +32,7 @@ const agencyProps = {
       id: "ac3",
       title: "Pitch",
       description:
-        "Comprehensive <strong> pitch management </strong>, including comms, diary management and pitch hosting.",
+        "Comprehensive <strong> pitch management, </strong> including comms, diary management <br /> and pitch hosting.",
       icon: "/icons/meeting.svg",
       href: "https://hbr.org/2020/05/what-makes-a-great-pitch",
     },

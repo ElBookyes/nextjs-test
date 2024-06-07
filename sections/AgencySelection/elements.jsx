@@ -18,7 +18,7 @@ export const StyledSubTitle = styled((props) => <SectionSubheading {...props} />
 `;
 
 export const StyledContentContainer = styled.div`
-    --max-width: 1110px;
+    --max-width: 1210px;
     --container-padding: 1rem;
 
     display: flex;
@@ -27,12 +27,13 @@ export const StyledContentContainer = styled.div`
     align-items: center;
     background-image: url("/img/background.png");
     width: min(var(--max-width), 100% - (var(--container-padding) * 2));  
+    padding: var(--container-padding);
     margin-inline: auto;
     margin-block: 3em;
 
     @media screen and (min-width: 1024px) {
         flex-direction: row;
-        gap: 5em;
+        gap: 0em;
         background-image: none;
     }
 `; 
@@ -40,8 +41,8 @@ export const StyledContentContainer = styled.div`
 export const StyledImageContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: end;
-    width: 100%;
+    align-items: center;
+    width: 90%;
     background-image: url("/img/background.png");
     background-size: cover;
     background-position: center;
@@ -59,7 +60,6 @@ export const StyledImage = styled.div`
 
 export const StyledCardsContainer = styled.div`
     display: grid;
-    justify-items: center;
     gap: 2em;
     max-width: 35rem;
 `;

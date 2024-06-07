@@ -18,12 +18,27 @@ export const CardContainer = styled.a`
     align-items: center;
     border: 0.125rem solid transparent;
     color: inherit;
-    background-color: ${({ theme }) => theme.grayF0};
     border-radius: 0.625rem;
     text-decoration: none;
     padding-block: 1em;
     padding-inline: 2em;
     transition: border 0.2s;
+    min-height: 102px;
+
+    &:first-child {
+        max-width: 70%;
+        background-color: rgba(240, 240, 240, .4);
+    }
+
+    &:nth-child(2) {
+       max-width: 75%;
+       background-color: rgba(240, 240, 240, .7);
+    }
+
+    &:last-child {
+        max-width: 80%;
+        background-color: rgba(240, 240, 240, 1);
+    }
 
     &:hover,
     &:active,
